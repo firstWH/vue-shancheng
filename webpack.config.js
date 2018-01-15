@@ -43,7 +43,7 @@ module.exports = {
         }]
       },
       {
-        test: /\.(png|jpg|gif)/,
+        test: /\.(png|jpg|gif|ttf|woff)/,
         use: [{
           loader: 'url-loader',
           options: {
@@ -71,9 +71,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
-      filename: 'template.html',
+      template: './src/index.html',// 配置要处理的html文件
+      filename: 'index.html',// 处理后的新文件名称
       title: "hello vue"
     })
   ]
-}
+}   
