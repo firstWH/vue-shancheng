@@ -1,17 +1,20 @@
 <template>
     <div>
-        这里是app上部
         <router-view></router-view>
-        这里是app下部
     </div>
     
 </template>
 
 <script>
-    export default{
-        data () {
-            return {
-                value:2,
-            }
-        }
+    export default {
+      
+    }
 </script>
+
+<!-- scoped,表示该元素/结构只能在当前页面起作用 -->
+<style scoped>
+    div{
+        height: 100%;
+        background-color: rgb(170, 215, 233);
+    }
+</style>
